@@ -1,0 +1,77 @@
+2017-07-10 18:06:38.281 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-10 18:06:38.282 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a638b5: startup date [Mon Jul 10 18:04:30 CST 2017]; root of context hierarchy
+2017-07-10 18:06:38.284 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-10 18:06:42.892 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-10 18:06:44.741 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 1845 ms
+2017-07-10 18:06:45.245 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 62568 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-10 18:06:45.248 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-10 18:06:45.340 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:06:45 CST 2017]; root of context hierarchy
+2017-07-10 18:06:45.691 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-10 18:06:47.319 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-10 18:06:47.341 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-10 18:06:47.344 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-10 18:06:47.537 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-10 18:06:47.547 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2207 ms
+2017-07-10 18:06:47.723 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-10 18:06:47.731 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-10 18:06:47.732 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-10 18:06:47.739 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-10 18:06:47.739 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-10 18:06:48.282 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:06:45 CST 2017]; root of context hierarchy
+2017-07-10 18:06:48.366 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-10 18:06:48.375 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-10 18:06:48.376 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-10 18:06:48.419 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-10 18:06:48.419 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-10 18:06:48.505 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-10 18:06:48.716 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-10 18:06:48.744 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-10 18:06:48.771 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-10 18:06:48.811 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-10 18:06:48.863 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-10 18:06:48.873 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 3.98 seconds (JVM running for 6.785)
+2017-07-10 18:07:08.322 INFO  [http-nio-8080-exec-8]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-10 18:07:08.322 INFO  [http-nio-8080-exec-8]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-10 18:07:08.341 INFO  [http-nio-8080-exec-8]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-07-10 18:07:11.667 INFO  [http-nio-8080-exec-5]  ACController.class : Geting suggestions of ab from cache
+2017-07-10 18:08:45.033 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-10 18:08:45.034 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:06:45 CST 2017]; root of context hierarchy
+2017-07-10 18:08:45.043 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-10 18:09:29.270 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-10 18:09:31.285 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2012 ms
+2017-07-10 18:09:31.719 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 73012 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-10 18:09:31.719 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-10 18:09:31.805 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:09:31 CST 2017]; root of context hierarchy
+2017-07-10 18:09:32.159 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-10 18:09:33.691 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-10 18:09:33.709 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-10 18:09:33.711 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-10 18:09:34.196 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-10 18:09:34.206 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2401 ms
+2017-07-10 18:09:34.403 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-10 18:09:34.412 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-10 18:09:34.413 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-10 18:09:34.420 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-10 18:09:34.420 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-10 18:09:34.807 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:09:31 CST 2017]; root of context hierarchy
+2017-07-10 18:09:34.894 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-10 18:09:34.903 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-10 18:09:34.905 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-10 18:09:34.976 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-10 18:09:34.976 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-10 18:09:35.039 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-10 18:09:35.249 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-10 18:09:35.270 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-10 18:09:35.283 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-10 18:09:35.307 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-10 18:09:35.350 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-10 18:09:35.358 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 3.931 seconds (JVM running for 7.932)
+2017-07-10 18:09:41.912 INFO  [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-10 18:09:41.918 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-10 18:09:41.955 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2017-07-10 18:09:42.809 INFO  [http-nio-8080-exec-3]  ACController.class : Geting suggestions of ab from cache
+2017-07-10 18:09:43.444 INFO  [http-nio-8080-exec-5]  ACController.class : Geting suggestions of ab from cache
+2017-07-10 18:09:52.152 INFO  [http-nio-8080-exec-7]  ACController.class : Geting suggestions of ab from cache
+2017-07-10 18:14:38.281 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-10 18:14:38.282 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:09:31 CST 2017]; root of context hierarchy
+2017-07-10 18:14:38.289 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
