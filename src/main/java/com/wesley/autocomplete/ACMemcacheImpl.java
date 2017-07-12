@@ -19,8 +19,8 @@ public class ACMemcacheImpl implements IAutoComplete{
 	private static final Object lock = new Object();
 	private static final int MAX_INDEXED_CHARS = 20;
 	private static List<String> stopWords = DataLoader.stopWords;
-	private MemcacheService productIndex = MemcacheServiceFactory.getMemcacheService("productIndex");
-	private MemcacheService productName = MemcacheServiceFactory.getMemcacheService("productName");
+	private static MemcacheService productIndex = MemcacheServiceFactory.getMemcacheService("productIndex");
+	private static MemcacheService productName = MemcacheServiceFactory.getMemcacheService("productName");
 //	public static Map<String, String> productIndex = new HashMap<>();
 //	public static Map<String, String> productName = new HashMap<>();
 	
