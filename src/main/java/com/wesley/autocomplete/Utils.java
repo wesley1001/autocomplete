@@ -1,7 +1,14 @@
 package com.wesley.autocomplete;
 
+import static org.hamcrest.CoreMatchers.nullValue;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrl;
+
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 public class Utils {
@@ -18,5 +25,6 @@ public class Utils {
             return false;
         }
         return true;
-    }
+    }    
+    
 }

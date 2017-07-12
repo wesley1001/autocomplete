@@ -1,77 +1,966 @@
-2017-07-10 18:06:38.281 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2017-07-10 18:06:38.282 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a638b5: startup date [Mon Jul 10 18:04:30 CST 2017]; root of context hierarchy
-2017-07-10 18:06:38.284 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
-2017-07-10 18:06:42.892 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
-2017-07-10 18:06:44.741 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 1845 ms
-2017-07-10 18:06:45.245 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 62568 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
-2017-07-10 18:06:45.248 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
-2017-07-10 18:06:45.340 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:06:45 CST 2017]; root of context hierarchy
-2017-07-10 18:06:45.691 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
-2017-07-10 18:06:47.319 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
-2017-07-10 18:06:47.341 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
-2017-07-10 18:06:47.344 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
-2017-07-10 18:06:47.537 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
-2017-07-10 18:06:47.547 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2207 ms
-2017-07-10 18:06:47.723 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
-2017-07-10 18:06:47.731 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-07-10 18:06:47.732 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-07-10 18:06:47.739 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-07-10 18:06:47.739 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
-2017-07-10 18:06:48.282 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:06:45 CST 2017]; root of context hierarchy
-2017-07-10 18:06:48.366 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
-2017-07-10 18:06:48.375 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-07-10 18:06:48.376 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-07-10 18:06:48.419 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-10 18:06:48.419 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-10 18:06:48.505 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-10 18:06:48.716 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
-2017-07-10 18:06:48.744 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
-2017-07-10 18:06:48.771 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
-2017-07-10 18:06:48.811 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
-2017-07-10 18:06:48.863 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
-2017-07-10 18:06:48.873 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 3.98 seconds (JVM running for 6.785)
-2017-07-10 18:07:08.322 INFO  [http-nio-8080-exec-8]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-07-10 18:07:08.322 INFO  [http-nio-8080-exec-8]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
-2017-07-10 18:07:08.341 INFO  [http-nio-8080-exec-8]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
-2017-07-10 18:07:11.667 INFO  [http-nio-8080-exec-5]  ACController.class : Geting suggestions of ab from cache
-2017-07-10 18:08:45.033 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2017-07-10 18:08:45.034 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:06:45 CST 2017]; root of context hierarchy
-2017-07-10 18:08:45.043 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
-2017-07-10 18:09:29.270 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
-2017-07-10 18:09:31.285 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2012 ms
-2017-07-10 18:09:31.719 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 73012 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
-2017-07-10 18:09:31.719 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
-2017-07-10 18:09:31.805 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:09:31 CST 2017]; root of context hierarchy
-2017-07-10 18:09:32.159 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
-2017-07-10 18:09:33.691 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
-2017-07-10 18:09:33.709 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
-2017-07-10 18:09:33.711 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
-2017-07-10 18:09:34.196 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
-2017-07-10 18:09:34.206 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2401 ms
-2017-07-10 18:09:34.403 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
-2017-07-10 18:09:34.412 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-07-10 18:09:34.413 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-07-10 18:09:34.420 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-07-10 18:09:34.420 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
-2017-07-10 18:09:34.807 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:09:31 CST 2017]; root of context hierarchy
-2017-07-10 18:09:34.894 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
-2017-07-10 18:09:34.903 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-07-10 18:09:34.905 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-07-10 18:09:34.976 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-10 18:09:34.976 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-10 18:09:35.039 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-07-10 18:09:35.249 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
-2017-07-10 18:09:35.270 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
-2017-07-10 18:09:35.283 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
-2017-07-10 18:09:35.307 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
-2017-07-10 18:09:35.350 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
-2017-07-10 18:09:35.358 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 3.931 seconds (JVM running for 7.932)
-2017-07-10 18:09:41.912 INFO  [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-07-10 18:09:41.918 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
-2017-07-10 18:09:41.955 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
-2017-07-10 18:09:42.809 INFO  [http-nio-8080-exec-3]  ACController.class : Geting suggestions of ab from cache
-2017-07-10 18:09:43.444 INFO  [http-nio-8080-exec-5]  ACController.class : Geting suggestions of ab from cache
-2017-07-10 18:09:52.152 INFO  [http-nio-8080-exec-7]  ACController.class : Geting suggestions of ab from cache
-2017-07-10 18:14:38.281 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2017-07-10 18:14:38.282 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@636be97c: startup date [Mon Jul 10 18:09:31 CST 2017]; root of context hierarchy
-2017-07-10 18:14:38.289 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 09:39:11.707 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:39:13.736 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2016 ms
+2017-07-12 09:44:15.810 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:44:17.855 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2038 ms
+2017-07-12 09:44:43.247 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:44:45.334 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2062 ms
+2017-07-12 09:47:51.702 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:47:53.734 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2026 ms
+2017-07-12 09:50:30.546 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:50:32.638 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2087 ms
+2017-07-12 09:53:31.992 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:53:33.944 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 1947 ms
+2017-07-12 09:55:39.504 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:55:41.773 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2261 ms
+2017-07-12 09:58:20.354 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 09:58:22.632 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2272 ms
+2017-07-12 10:23:28.510 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:23:30.727 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2213 ms
+2017-07-12 10:24:57.814 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:24:59.963 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2145 ms
+2017-07-12 10:25:54.997 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:25:57.328 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2326 ms
+2017-07-12 10:26:51.024 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:26:53.246 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2218 ms
+2017-07-12 10:27:41.359 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:27:44.188 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2822 ms
+2017-07-12 10:31:59.794 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:32:01.923 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2125 ms
+2017-07-12 10:32:30.641 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:32:32.743 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2097 ms
+2017-07-12 10:33:31.646 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:33:33.753 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2102 ms
+2017-07-12 10:33:59.799 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:34:01.859 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2056 ms
+2017-07-12 10:35:29.287 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:35:31.475 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2183 ms
+2017-07-12 10:36:48.345 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:36:50.445 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2092 ms
+2017-07-12 10:37:36.962 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:37:39.408 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2440 ms
+2017-07-12 10:38:04.205 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:38:06.393 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2183 ms
+2017-07-12 10:38:23.259 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:38:25.448 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2185 ms
+2017-07-12 10:42:46.160 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:42:48.357 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2191 ms
+2017-07-12 10:43:10.218 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:43:12.605 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2379 ms
+2017-07-12 10:43:28.824 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:43:30.929 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2100 ms
+2017-07-12 10:44:00.283 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:44:02.375 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2088 ms
+2017-07-12 10:44:29.710 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:44:31.979 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2264 ms
+2017-07-12 10:46:09.454 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 10:46:11.403 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 1942 ms
+2017-07-12 11:12:46.121 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:12:48.406 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2279 ms
+2017-07-12 11:12:48.917 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 126844 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:12:48.918 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:12:49.015 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:12:49 CST 2017]; root of context hierarchy
+2017-07-12 11:12:49.373 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:12:51.346 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:12:51.380 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:12:51.386 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:12:51.870 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:12:51.875 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2860 ms
+2017-07-12 11:12:52.112 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:12:52.120 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:12:52.142 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:12:52.158 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:12:52.159 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:12:52.689 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:12:49 CST 2017]; root of context hierarchy
+2017-07-12 11:12:52.843 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:12:52.853 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:12:52.854 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:12:52.859 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:12:52.859 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:12:52.916 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:12:52.917 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:12:53.007 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:12:53.409 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:12:53.459 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:12:53.492 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:12:53.518 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:12:53.563 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:12:53.572 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 4.999 seconds (JVM running for 8.388)
+2017-07-12 11:13:04.461 INFO  [http-nio-8080-exec-10]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 11:13:04.468 INFO  [http-nio-8080-exec-10]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 11:13:04.503 INFO  [http-nio-8080-exec-10]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2017-07-12 11:15:17.524 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 11:15:17.532 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:12:49 CST 2017]; root of context hierarchy
+2017-07-12 11:15:17.541 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 11:15:20.821 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:15:23.121 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2292 ms
+2017-07-12 11:15:23.753 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 66820 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:15:23.754 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:15:23.880 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b955cac: startup date [Wed Jul 12 11:15:23 CST 2017]; root of context hierarchy
+2017-07-12 11:15:24.414 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:15:26.496 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:15:26.551 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:15:26.553 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:15:26.844 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:15:26.854 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2974 ms
+2017-07-12 11:15:27.143 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:15:27.150 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:15:27.151 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:15:27.158 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:15:27.158 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:15:27.824 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b955cac: startup date [Wed Jul 12 11:15:23 CST 2017]; root of context hierarchy
+2017-07-12 11:15:28.032 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:15:28.063 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:15:28.073 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:15:28.088 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:15:28.091 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:15:28.226 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:15:28.228 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:15:28.363 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:15:28.993 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:15:29.043 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:15:29.087 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:15:29.117 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:15:29.220 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:15:29.228 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 5.882 seconds (JVM running for 9.411)
+2017-07-12 11:15:35.816 INFO  [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 11:15:35.821 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 11:15:35.854 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2017-07-12 11:18:33.020 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:18:35.305 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2277 ms
+2017-07-12 11:18:35.961 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 142588 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:18:35.962 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:18:36.088 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b955cac: startup date [Wed Jul 12 11:18:36 CST 2017]; root of context hierarchy
+2017-07-12 11:18:36.712 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:18:39.282 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:18:39.310 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:18:39.320 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:18:39.550 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:18:39.558 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 3470 ms
+2017-07-12 11:18:39.911 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:18:39.938 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:18:39.939 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:18:39.949 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:18:39.950 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:18:40.683 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b955cac: startup date [Wed Jul 12 11:18:36 CST 2017]; root of context hierarchy
+2017-07-12 11:18:40.991 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:18:41.004 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:18:41.005 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:18:41.011 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:18:41.012 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:18:41.129 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:18:41.132 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:18:41.283 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:18:41.956 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:18:42.012 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:18:42.038 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:18:42.075 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:18:42.270 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:18:42.296 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 6.784 seconds (JVM running for 10.537)
+2017-07-12 11:18:49.215 INFO  [http-nio-8080-exec-10]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 11:18:49.221 INFO  [http-nio-8080-exec-10]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 11:18:49.263 INFO  [http-nio-8080-exec-10]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2017-07-12 11:23:13.268 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:23:15.967 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2693 ms
+2017-07-12 11:23:16.625 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 13784 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:23:16.626 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:23:16.727 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:23:16 CST 2017]; root of context hierarchy
+2017-07-12 11:23:17.217 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:23:18.849 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:23:18.870 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:23:18.872 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:23:19.093 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:23:19.105 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2379 ms
+2017-07-12 11:23:19.339 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:23:19.347 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:23:19.347 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:23:19.354 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:23:19.354 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:23:19.886 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:23:16 CST 2017]; root of context hierarchy
+2017-07-12 11:23:20.048 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:23:20.068 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:23:20.069 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:23:20.080 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:23:20.082 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:23:20.217 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:23:20.218 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:23:20.425 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:23:20.753 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:23:20.818 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:23:20.865 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:23:20.918 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:23:21.045 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:23:21.051 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 4.847 seconds (JVM running for 8.718)
+2017-07-12 11:23:31.672 INFO  [http-nio-8080-exec-10]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 11:23:31.673 INFO  [http-nio-8080-exec-10]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 11:23:31.697 INFO  [http-nio-8080-exec-10]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-07-12 11:28:39.236 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 11:28:39.237 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:23:16 CST 2017]; root of context hierarchy
+2017-07-12 11:28:39.244 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 11:28:42.571 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:28:44.624 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2047 ms
+2017-07-12 11:28:45.181 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 149692 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:28:45.182 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:28:45.259 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:28:45 CST 2017]; root of context hierarchy
+2017-07-12 11:28:45.763 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:28:47.512 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:28:47.539 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:28:47.541 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:28:47.774 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:28:47.784 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2524 ms
+2017-07-12 11:28:47.971 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:28:47.979 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:28:47.983 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:28:47.988 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:28:47.989 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:28:48.471 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:28:45 CST 2017]; root of context hierarchy
+2017-07-12 11:28:48.578 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:28:48.592 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:28:48.595 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:28:48.597 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:28:48.603 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:28:48.624 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:28:48.690 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:28:48.691 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:28:48.811 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:28:49.127 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:28:49.150 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:28:49.168 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:28:49.189 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:28:49.259 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:28:49.265 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 4.452 seconds (JVM running for 7.64)
+2017-07-12 11:29:13.933 INFO  [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 11:29:13.939 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 11:29:13.963 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-07-12 11:29:26.189 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 11:29:26.196 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:28:45 CST 2017]; root of context hierarchy
+2017-07-12 11:29:26.206 INFO  [RMI TCP Connection(2)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 11:33:03.590 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:33:05.812 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 2216 ms
+2017-07-12 11:33:05.823 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:33:18.786 INFO  [main]  DataLoader.class : load completed, total 51646 items, spent 12963 ms
+2017-07-12 11:33:19.411 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 65420 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:33:19.412 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:33:19.538 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:33:19 CST 2017]; root of context hierarchy
+2017-07-12 11:33:20.026 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:33:22.460 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:33:22.508 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:33:22.510 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:33:22.716 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:33:22.744 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 3206 ms
+2017-07-12 11:33:23.111 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:33:23.119 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:33:23.120 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:33:23.130 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:33:23.131 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:33:23.713 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:33:19 CST 2017]; root of context hierarchy
+2017-07-12 11:33:23.894 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:33:23.919 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:33:23.920 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:33:23.924 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:33:23.933 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:33:23.947 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:33:24.043 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:33:24.043 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:33:24.126 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:33:24.385 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:33:24.411 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:33:24.457 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:33:24.479 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:33:24.528 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:33:24.537 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 5.549 seconds (JVM running for 21.877)
+2017-07-12 11:38:00.709 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:38:08.495 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:38:10.840 INFO  [main]  DataLoader.class : trie, load completed, total 51646 items, spent 2339 ms
+2017-07-12 11:38:10.848 INFO  [main]  DataLoader.class : loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:38:23.895 INFO  [main]  DataLoader.class : memcache, load completed, total 51646 items, spent 13047 ms
+2017-07-12 11:38:24.457 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 182520 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:38:24.458 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:38:24.634 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:38:24 CST 2017]; root of context hierarchy
+2017-07-12 11:38:25.063 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:38:27.663 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:38:27.690 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:38:27.691 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:38:27.868 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:38:27.874 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 3240 ms
+2017-07-12 11:38:28.122 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:38:28.128 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:38:28.129 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:38:28.139 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:38:28.139 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:38:28.716 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:38:24 CST 2017]; root of context hierarchy
+2017-07-12 11:38:28.836 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:38:28.844 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:38:28.845 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:38:28.846 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:38:28.850 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:38:28.861 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:38:28.903 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:38:28.903 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:38:29.021 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:38:29.292 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:38:29.319 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:38:29.339 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:38:29.353 ERROR [main]  o.a.coyote.http11.Http11NioProtocol : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wesley.autocomplete.AutocompleteApplication.main(AutocompleteApplication.java:79)
+2017-07-12 11:38:29.354 ERROR [main]  o.a.catalina.core.StandardService : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wesley.autocomplete.AutocompleteApplication.main(AutocompleteApplication.java:79)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+2017-07-12 11:38:29.372 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Pausing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:38:29.372 INFO  [main]  o.a.catalina.core.StandardService : Stopping service [Tomcat]
+2017-07-12 11:38:29.389 INFO  [main]  o.apache.catalina.util.LifecycleBase : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-07-12 11:38:29.401 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Stopping ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:38:29.402 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Destroying ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:38:29.416 INFO  [main]  o.s.b.a.l.AutoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-07-12 11:38:29.425 ERROR [main]  o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-07-12 11:38:29.446 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:38:24 CST 2017]; root of context hierarchy
+2017-07-12 11:38:29.453 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 11:38:54.525 INFO  [RMI TCP Connection(8)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 11:38:54.526 INFO  [RMI TCP Connection(8)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:33:19 CST 2017]; root of context hierarchy
+2017-07-12 11:38:54.533 INFO  [RMI TCP Connection(8)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 11:38:58.906 INFO  [main]  DataLoader.class : trie, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:39:00.888 INFO  [main]  DataLoader.class : trie, load completed, total 51646 items, spent 1977 ms
+2017-07-12 11:39:00.896 INFO  [main]  DataLoader.class : memcache, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:39:12.775 INFO  [main]  DataLoader.class : memcache, load completed, total 51646 items, spent 11879 ms
+2017-07-12 11:39:13.315 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 166540 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:39:13.316 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:39:13.411 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:39:13 CST 2017]; root of context hierarchy
+2017-07-12 11:39:14.557 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:39:16.046 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:39:16.085 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:39:16.096 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:39:16.337 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:39:16.348 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2937 ms
+2017-07-12 11:39:16.653 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:39:16.673 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:39:16.674 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:39:16.685 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:39:16.685 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:39:17.265 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:39:13 CST 2017]; root of context hierarchy
+2017-07-12 11:39:17.385 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:39:17.396 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:39:17.399 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:39:17.399 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:39:17.404 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:39:17.410 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:39:17.476 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:39:17.477 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:39:17.559 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:39:17.836 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:39:17.857 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:39:17.875 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:39:17.901 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:39:17.936 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:39:17.942 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 4.978 seconds (JVM running for 19.901)
+2017-07-12 11:40:10.490 INFO  [RMI TCP Connection(8)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 11:40:10.503 INFO  [RMI TCP Connection(8)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:39:13 CST 2017]; root of context hierarchy
+2017-07-12 11:40:10.512 INFO  [RMI TCP Connection(8)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 11:52:54.799 INFO  [main]  DataLoader.class : trie, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:52:56.788 INFO  [main]  DataLoader.class : trie, load completed, total 51646 items, spent 1978 ms
+2017-07-12 11:52:56.796 INFO  [main]  DataLoader.class : memcache, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:53:08.602 INFO  [main]  DataLoader.class : memcache, load completed, total 51646 items, spent 11805 ms
+2017-07-12 11:53:09.134 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 65480 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:53:09.135 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:53:09.243 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:53:09 CST 2017]; root of context hierarchy
+2017-07-12 11:53:09.668 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:53:11.909 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:53:11.940 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:53:11.942 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:53:12.126 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:53:12.131 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2888 ms
+2017-07-12 11:53:12.323 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:53:12.330 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:53:12.330 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:53:12.336 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:53:12.336 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:53:12.767 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:53:09 CST 2017]; root of context hierarchy
+2017-07-12 11:53:12.892 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/cache],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> com.wesley.autocomplete.ACController.getFromTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:53:12.902 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:53:12.903 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:53:12.909 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:53:12.910 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:53:12.926 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:53:12.927 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:53:12.994 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:53:12.994 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:53:13.086 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:53:13.310 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:53:13.349 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:53:13.368 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:53:13.389 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:53:13.439 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:53:13.449 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 4.696 seconds (JVM running for 19.711)
+2017-07-12 11:53:30.530 INFO  [http-nio-8080-exec-9]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 11:53:30.536 INFO  [http-nio-8080-exec-9]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 11:53:30.561 INFO  [http-nio-8080-exec-9]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-07-12 11:54:08.664 ERROR [http-nio-8080-exec-1]  o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map] with root cause
+java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map
+	at com.wesley.autocomplete.ACController.getFromTheCache(ACController.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-07-12 11:54:13.503 ERROR [http-nio-8080-exec-9]  o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map] with root cause
+java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map
+	at com.wesley.autocomplete.ACController.getFromTheCache(ACController.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-07-12 11:54:19.431 ERROR [http-nio-8080-exec-8]  o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map] with root cause
+java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map
+	at com.wesley.autocomplete.ACController.getFromTheCache(ACController.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-07-12 11:54:42.428 ERROR [http-nio-8080-exec-7]  o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map] with root cause
+java.lang.ClassCastException: java.util.concurrent.ConcurrentHashMap$EntrySetView cannot be cast to java.util.Map
+	at com.wesley.autocomplete.ACController.getFromTheCache(ACController.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-07-12 11:55:38.699 INFO  [RMI TCP Connection(10)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 11:55:38.705 INFO  [RMI TCP Connection(10)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:53:09 CST 2017]; root of context hierarchy
+2017-07-12 11:55:38.714 INFO  [RMI TCP Connection(10)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 11:57:52.293 INFO  [main]  DataLoader.class : trie, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:57:54.562 INFO  [main]  DataLoader.class : trie, load completed, total 51646 items, spent 2264 ms
+2017-07-12 11:57:54.570 INFO  [main]  DataLoader.class : memcache, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 11:58:07.126 INFO  [main]  DataLoader.class : memcache, load completed, total 51646 items, spent 12556 ms
+2017-07-12 11:58:07.741 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 157620 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 11:58:07.742 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 11:58:07.875 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:58:07 CST 2017]; root of context hierarchy
+2017-07-12 11:58:08.397 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 11:58:10.491 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 11:58:10.542 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 11:58:10.544 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 11:58:10.794 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 11:58:10.804 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2929 ms
+2017-07-12 11:58:11.159 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 11:58:11.167 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 11:58:11.168 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 11:58:11.189 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 11:58:11.189 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 11:58:11.802 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:58:07 CST 2017]; root of context hierarchy
+2017-07-12 11:58:11.963 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/cache],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> com.wesley.autocomplete.ACController.getFromTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:58:11.973 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:58:11.974 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:58:11.975 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 11:58:11.975 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:58:11.987 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 11:58:11.990 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 11:58:12.055 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:58:12.055 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:58:12.151 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 11:58:12.511 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 11:58:12.560 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:58:12.578 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 11:58:12.641 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 11:58:12.777 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 11:58:12.783 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 5.429 seconds (JVM running for 21.453)
+2017-07-12 12:00:26.153 INFO  [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 12:00:26.158 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 12:00:26.182 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-07-12 12:00:38.018 ERROR [http-nio-8080-exec-3]  o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String] with root cause
+java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String
+	at com.wesley.autocomplete.ACController.getFromTheCache(ACController.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-07-12 12:00:40.916 ERROR [http-nio-8080-exec-4]  o.a.c.c.C.[.[.[.[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String] with root cause
+java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.lang.String
+	at com.wesley.autocomplete.ACController.getFromTheCache(ACController.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-07-12 12:02:17.764 INFO  [RMI TCP Connection(11)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 12:02:17.771 INFO  [RMI TCP Connection(11)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 11:58:07 CST 2017]; root of context hierarchy
+2017-07-12 12:02:17.779 INFO  [RMI TCP Connection(11)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 12:02:23.206 INFO  [main]  DataLoader.class : trie, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 12:02:25.270 INFO  [main]  DataLoader.class : trie, load completed, total 51646 items, spent 2058 ms
+2017-07-12 12:02:25.277 INFO  [main]  DataLoader.class : memcache, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 12:02:37.762 INFO  [main]  DataLoader.class : memcache, load completed, total 51646 items, spent 12484 ms
+2017-07-12 12:02:38.453 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 221564 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 12:02:38.453 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 12:02:38.625 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:02:38 CST 2017]; root of context hierarchy
+2017-07-12 12:02:39.214 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 12:02:41.398 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 12:02:41.429 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 12:02:41.441 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 12:02:41.678 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 12:02:41.684 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 3060 ms
+2017-07-12 12:02:41.926 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 12:02:41.933 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 12:02:41.934 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 12:02:41.941 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 12:02:41.941 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 12:02:42.512 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:02:38 CST 2017]; root of context hierarchy
+2017-07-12 12:02:42.666 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 12:02:42.681 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 12:02:42.682 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:02:42.683 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/cache],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.wesley.autocomplete.ACController.getFromTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:02:42.684 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:02:42.698 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 12:02:42.699 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:02:42.738 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:02:42.738 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:02:42.872 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:02:43.175 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 12:02:43.214 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 12:02:43.235 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 12:02:43.291 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 12:02:43.362 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 12:02:43.374 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 5.346 seconds (JVM running for 21.039)
+2017-07-12 12:02:52.780 INFO  [http-nio-8080-exec-9]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 12:02:52.786 INFO  [http-nio-8080-exec-9]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 12:02:52.813 INFO  [http-nio-8080-exec-9]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2017-07-12 12:07:12.181 INFO  [RMI TCP Connection(13)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 12:07:12.187 INFO  [RMI TCP Connection(13)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:02:38 CST 2017]; root of context hierarchy
+2017-07-12 12:07:12.196 INFO  [RMI TCP Connection(13)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 12:09:54.396 INFO  [main]  DataLoader.class : trie, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 12:09:56.440 INFO  [main]  DataLoader.class : trie, load completed, total 51646 items, spent 2039 ms
+2017-07-12 12:09:56.447 INFO  [main]  DataLoader.class : memcache, loading data from C:/Downloads/Softwares/Miscs/products.json
+2017-07-12 12:10:09.799 INFO  [main]  DataLoader.class : memcache, load completed, total 51646 items, spent 13352 ms
+2017-07-12 12:10:10.286 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 80788 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 12:10:10.287 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 12:10:10.375 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:10:10 CST 2017]; root of context hierarchy
+2017-07-12 12:10:10.948 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 12:10:12.890 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 12:10:12.926 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 12:10:12.927 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 12:10:13.198 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 12:10:13.215 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2840 ms
+2017-07-12 12:10:13.525 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 12:10:13.535 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 12:10:13.536 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 12:10:13.551 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 12:10:13.551 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 12:10:14.098 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:10:10 CST 2017]; root of context hierarchy
+2017-07-12 12:10:14.250 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:10:14.260 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/cache],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.wesley.autocomplete.ACController.getFromTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:10:14.260 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 12:10:14.262 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:10:14.264 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 12:10:14.273 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 12:10:14.274 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:10:14.325 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:10:14.325 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:10:14.456 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:10:14.820 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 12:10:14.886 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 12:10:14.902 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 12:10:14.938 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 12:10:14.995 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 12:10:15.002 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 5.044 seconds (JVM running for 21.457)
+2017-07-12 12:10:22.108 INFO  [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 12:10:22.115 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 12:10:22.142 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2017-07-12 12:18:21.083 INFO  [RMI TCP Connection(19)-127.0.0.1]  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-07-12 12:18:21.096 INFO  [RMI TCP Connection(19)-127.0.0.1]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:10:10 CST 2017]; root of context hierarchy
+2017-07-12 12:18:21.103 INFO  [RMI TCP Connection(19)-127.0.0.1]  o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown
+2017-07-12 12:18:25.670 INFO  [main]  DataLoader.class : trie, loading data from products.json
+2017-07-12 12:18:28.142 INFO  [main]  DataLoader.class : trie, load completed, total 51646 items, spent 2465 ms
+2017-07-12 12:18:28.144 INFO  [main]  DataLoader.class : memcache, loading data from products.json
+2017-07-12 12:18:38.720 INFO  [main]  DataLoader.class : memcache, load completed, total 51646 items, spent 10576 ms
+2017-07-12 12:18:39.239 INFO  [main]  c.w.a.AutocompleteApplication : Starting AutocompleteApplication on MININT-V98QNR4 with PID 194580 (C:\Downloads\Mydemos\autocomplete\target\classes started by weswu in C:\Downloads\Mydemos\autocomplete)
+2017-07-12 12:18:39.239 INFO  [main]  c.w.a.AutocompleteApplication : No active profile set, falling back to default profiles: default
+2017-07-12 12:18:39.353 INFO  [main]  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:18:39 CST 2017]; root of context hierarchy
+2017-07-12 12:18:40.451 INFO  [background-preinit]  o.h.validator.internal.util.Version : HV000001: Hibernate Validator 5.3.5.Final
+2017-07-12 12:18:42.078 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-12 12:18:42.105 INFO  [main]  o.a.catalina.core.StandardService : Starting service [Tomcat]
+2017-07-12 12:18:42.113 INFO  [main]  o.a.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-12 12:18:42.277 INFO  [localhost-startStop-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2017-07-12 12:18:42.285 INFO  [localhost-startStop-1]  o.s.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2932 ms
+2017-07-12 12:18:42.532 INFO  [localhost-startStop-1]  o.s.b.w.s.ServletRegistrationBean : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 12:18:42.546 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 12:18:42.546 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 12:18:42.555 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 12:18:42.555 INFO  [localhost-startStop-1]  o.s.b.w.s.FilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 12:18:43.110 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50b472aa: startup date [Wed Jul 12 12:18:39 CST 2017]; root of context hierarchy
+2017-07-12 12:18:43.224 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/cache],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.wesley.autocomplete.ACController.getFromTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:18:43.232 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/cache/clear],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.clearTheCache(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:18:43.233 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/set/mode/{mode}],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.setAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 12:18:43.237 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/prefix/{prefix}],methods=[GET]}" onto public java.util.List<java.lang.String> com.wesley.autocomplete.ACController.searchSuggestions(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2017-07-12 12:18:43.238 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/config/get/mode],methods=[GET]}" onto public java.lang.String com.wesley.autocomplete.ACController.getAutocompleteMode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:18:43.251 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 12:18:43.252 INFO  [main]  o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 12:18:43.291 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:18:43.292 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:18:43.351 INFO  [main]  o.s.w.s.h.SimpleUrlHandlerMapping : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 12:18:43.601 INFO  [main]  o.s.j.e.a.AnnotationMBeanExporter : Registering beans for JMX exposure on startup
+2017-07-12 12:18:43.625 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2017-07-12 12:18:43.645 INFO  [main]  o.a.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2017-07-12 12:18:43.666 INFO  [main]  o.a.tomcat.util.net.NioSelectorPool : Using a shared selector for servlet write/read
+2017-07-12 12:18:43.701 INFO  [main]  o.s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-12 12:18:43.707 INFO  [main]  c.w.a.AutocompleteApplication : Started AutocompleteApplication in 4.809 seconds (JVM running for 19.039)
+2017-07-12 12:21:16.097 INFO  [http-nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 12:21:16.098 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 12:21:16.125 INFO  [http-nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms

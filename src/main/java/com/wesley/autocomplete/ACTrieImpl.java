@@ -8,11 +8,11 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.SortedMap;
 
-public class ACTrieImpl {
+public class ACTrieImpl implements IAutoComplete{
     private static PatriciaTrie<ACEntity> trie = new PatriciaTrie<ACEntity>();
     private static final Object lock = new Object();
     
-    public static void addProdName(String prodName, int order) {
+    public void addProdName(String prodName, int order) {
         synchronized (lock) {
             ACEntity prod = ACEntity.fromFormattedString(prodName);
             if (prod != null) {
@@ -23,7 +23,7 @@ public class ACTrieImpl {
        }
     }
     
-    public static List<String> getSuggestions(String prefix){
+    public List<String> getSuggestions(String prefix){
     	List<String> ret = new ArrayList<String>();
     	if (trie == null || trie.isEmpty() || prefix.trim() == "") {
            return ret;
@@ -47,4 +47,10 @@ public class ACTrieImpl {
         }
         return ret;
     }
+
+	@Override
+	public String getImplName() {
+		// TODO Auto-generated method stub
+		return "trie";
+	}
 }
