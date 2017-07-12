@@ -18,11 +18,11 @@ public class ACMemcacheImpl implements IAutoComplete{
 	private static Logger logger = LoggerFactory.getLogger("ACMemcacheImpl.class");
 	private static final Object lock = new Object();
 	private static final int MAX_INDEXED_CHARS = 20;
-	private static List<String> stopWords = DataLoader.stopWords;
-	private static MemcacheService productIndex = MemcacheServiceFactory.getMemcacheService("productIndex");
-	private static MemcacheService productName = MemcacheServiceFactory.getMemcacheService("productName");
-//	public static Map<String, String> productIndex = new HashMap<>();
-//	public static Map<String, String> productName = new HashMap<>();
+//	private static List<String> stopWords = DataLoader.stopWords;
+//	public static MemcacheService productIndex = MemcacheServiceFactory.getMemcacheService("productIndex");
+//	public static MemcacheService productName = MemcacheServiceFactory.getMemcacheService("productName");
+	public static Map<String, String> productIndex = new HashMap<>();
+	public static Map<String, String> productName = new HashMap<>();
 	
 	public ACMemcacheImpl(){}
 	
@@ -31,7 +31,6 @@ public class ACMemcacheImpl implements IAutoComplete{
 		synchronized (lock) {
             ACEntity prod = ACEntity.fromFormattedString(prodName);
             if (prod != null) {
-            	System.out.println(prod.getKeyword());
             	productName.put(orderStr,prod.getKeyword());
             	/* add the index */
             	addIndex(prod.getKeyword(), order);
@@ -90,17 +89,17 @@ public class ACMemcacheImpl implements IAutoComplete{
 		if (null == indexExists){return results;}
 		/* convert the string to list */
 		List<String> prodOrders = Arrays.asList(indexExists.split(","));
-//		for(String key:prodOrders){
-//			System.out.println("find key:" + key);
-//			results.put(key, new ACEntity(productName.get(key)));
-//		}
-		/* get the matched product */
-		Map<String, Object> prodsMap = productName.getAll(prodOrders);
-		for (Map.Entry<String, Object> entry : prodsMap.entrySet())
-		{
-			System.out.println(entry.getKey() + "/" + entry.getValue());
-			results.put(entry.getKey(), new ACEntity(entry.getKey().toString()));
+		for(String key:prodOrders){
+			System.out.println("find key:" + key);
+			results.put(key, new ACEntity(productName.get(key)));
 		}
+//		/* get the matched product */
+//		Map<String, Object> prodsMap = productName.getAll(prodOrders);
+//		for (Map.Entry<String, Object> entry : prodsMap.entrySet())
+//		{
+//			System.out.println(entry.getKey() + "/" + entry.getValue());
+//			results.put(entry.getKey(), new ACEntity(entry.getKey().toString()));
+//		}
 		return results;
 		
     }
