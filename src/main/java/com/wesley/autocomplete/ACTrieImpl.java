@@ -7,6 +7,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.SortedMap;
+import com.wesley.autocomplete.*;
+
 
 public class ACTrieImpl implements IAutoComplete{
     private static PatriciaTrie<ACEntity> trie = new PatriciaTrie<ACEntity>();
