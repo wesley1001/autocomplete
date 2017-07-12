@@ -1,7 +1,5 @@
 package com.wesley.autocomplete;
 
-import static org.mockito.Matchers.intThat;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
